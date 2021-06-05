@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@300;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+$shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  // background: url('../img/bg1.jpg') no-repeat;
+  background: rgb(194, 53, 77);
+}
+
+/* Navbar Stylings */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  .logo {
+    color: #fff;
+    margin-left: 40px;
+
+    h2 {
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 40px;
+    }
+  }
+  .links {
+    width: 30%;
+    padding: 5px;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      li {
+        a {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          color: white;
+          font-size: 23px;
+          letter-spacing: 1px;
+          transition: 0.3s;
+          text-decoration: none;
+          &:hover {
+            color: rgb(255, 225, 225);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Navbar Stylings End*/
+
+/*Search Container Styling Start*/
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  form {
+    display: flex;
+
+    input {
+      width: 250px;
+      padding: 10px;
+      border-radius: 50px;
+      border: none;
+      font-size: 14px;
+      line-height: 18px;
+      outline: none;
+      transition: 0.5s;
+
+      &:hover,
+      &:focus {
+        width: 450px;
+      }
+      &::placeholder {
+        color: rgba(87, 87, 86, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*Search Container Styling End*/
+
+/* UserList Styling Start*/
+.user-list {
+  align-items: center;
+  margin: 0px 40px 40px 40px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2% 4%;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  border-radius: 23px;
+  flex-direction: column;
+  width: 270px;
+  background-color: #fff;
+  box-shadow: $shadow;
+  img {
+    width: 185px;
+    margin: 20px 0 0 0;
+    border-radius: 50%;
+    box-shadow: $shadow;
+  }
+  .info {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      color: #2d354a;
+      font-size: 23px;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .detail-button {
+      padding: 15px 45px;
+      text-align: center;
+      border: none;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 20px;
+      cursor: pointer;
+      background-image: linear-gradient(
+        to right,
+        #f857a6 0%,
+        #ff5858 51%,
+        #f857a6 100%
+      );
+
+      &:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      margin-top: 18px;
+      text-align: center;
+      a {
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+/* UserList Styling End*/
+
+/*User Component stying start*/
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  button {
+    width: 150px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .user-info {
+    padding: 0px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 300px;
+    margin: 40px 0;
+    .img-container {
+      img {
+        width: 330px;
+        height: 300px;
+        border-radius: 50px;
+        background: rgb(194, 53, 77);
+      }
+    }
+    .content {
+      background: rgba(255, 255, 255, 0.473);
+      height: 300px;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 11px 6px 28px 3px rgba(0, 0, 0, 0.85);
+      a{
+        text-decoration: none;
+        color: black;
+        margin-bottom: 4px;
+      }
+    
+      
+    
+    
+    }
+  }
+  .badge-container {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-left: 20px;
+  }
+
+  .repo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 44px;
+      color: #fff;
+      font-weight: bolder;
+    }
+
+    .repos {
+      margin-top: 15px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+
+      .repo-info {
+        background: #ffffff;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding: 10px;
+        
+        h4 {
+          
+          text-align: center;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*User Component stying end*/

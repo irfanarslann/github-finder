@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@300;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  background: #c2354d;
+}
+
+/* Navbar Stylings */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar .logo {
+  color: #fff;
+  margin-left: 40px;
+}
+
+.navbar .logo h2 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.navbar .links {
+  width: 30%;
+  padding: 5px;
+}
+
+.navbar .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .links ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 23px;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navbar .links ul li a:hover {
+  color: #ffe1e1;
+}
+
+/* Navbar Stylings End*/
+/*Search Container Styling Start*/
+.search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.search-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-wrapper form input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.search-wrapper form input:hover, .search-wrapper form input:focus {
+  width: 450px;
+}
+
+.search-wrapper form input::-webkit-input-placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.search-wrapper form input:-ms-input-placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.search-wrapper form input::-ms-input-placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.search-wrapper form input::placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+/*Search Container Styling End*/
+/* UserList Styling Start*/
+.user-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 40px 40px 40px;
+  padding: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 2% 4%;
+}
+
+.user-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 23px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 270px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.user-card img {
+  width: 185px;
+  margin: 20px 0 0 0;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.user-card .info {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-card .info h3 {
+  color: #2d354a;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.user-card .info .detail-button {
+  padding: 15px 45px;
+  text-align: center;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f857a6), color-stop(51%, #ff5858), to(#f857a6));
+  background-image: linear-gradient(to right, #f857a6 0%, #ff5858 51%, #f857a6 100%);
+}
+
+.user-card .info .detail-button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-card .info p {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.user-card .info p a {
+  font-size: 14px;
+  color: #000000;
+}
+
+/* UserList Styling End*/
+/*User Component stying start*/
+.user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-container button {
+  width: 150px;
+}
+
+.user-container button a {
+  text-decoration: none;
+}
+
+.user-container .user-info {
+  padding: 0px 20px 20px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  height: 300px;
+  margin: 40px 0;
+}
+
+.user-container .user-info .img-container img {
+  width: 330px;
+  height: 300px;
+  border-radius: 50px;
+  background: #c2354d;
+}
+
+.user-container .user-info .content {
+  background: rgba(255, 255, 255, 0.473);
+  height: 300px;
+  padding: 15px;
+  border-radius: 20px;
+  -webkit-box-shadow: 11px 6px 28px 3px rgba(0, 0, 0, 0.85);
+          box-shadow: 11px 6px 28px 3px rgba(0, 0, 0, 0.85);
+}
+
+.user-container .user-info .content a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.user-container .badge-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px;
+  margin-left: 20px;
+}
+
+.user-container .repo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.user-container .repo-container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.user-container .repo-container .repos {
+  margin-top: 15px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user-container .repo-container .repos .repo-info {
+  background: #ffffff;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.user-container .repo-container .repos .repo-info h4 {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-container .repo-container .repos .repo-info h4 a {
+  text-decoration: none;
+  color: black;
+}
+
+/*User Component stying end*/
+/*# sourceMappingURL=index.css.map */
