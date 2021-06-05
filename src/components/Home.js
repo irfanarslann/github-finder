@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Search from "./Search";
 const Home = () => {
   const [url, setUrl] = useState(
-    "https://api.github.com/users?access_token=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"
+    "https://api.github.com/users?access_token=" + process.env.REACT_APP_ACCESS_TOKEN
   );
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
